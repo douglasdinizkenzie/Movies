@@ -33,6 +33,10 @@ export const listAllMoviesService = async (
     orderType = "DESC";
   }
 
+  if (sort === undefined) {
+    orderType = "ASC";
+  }
+
   const count: number = await movieRepository.count();
 
   const findMovies: Array<Movie> = await movieRepository.find({

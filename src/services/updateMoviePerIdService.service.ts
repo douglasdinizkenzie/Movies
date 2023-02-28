@@ -14,8 +14,6 @@ export const updateMoviePerIdService = async (
 ): Promise<tMovieReturn> => {
   const movieRepository: Repository<Movie> = AppDataSource.getRepository(Movie);
 
-  console.log(Object.keys(movieData));
-
   const oldMovie = await movieRepository.findOne({
     where: {
       id: idParams,
