@@ -1,3 +1,13 @@
-# m4-t14-movies-typeorm
+# Movies
 
-Para essa entrega, é necessário executar testes automatizados.
+### Esse projeto Movies consiste em uma API contendo um CRUD de uma aplicação para filmes usando o Typeorm para manipular os dados.
+
+tecnologias utilizadas:
+
+Express
+dotenv
+express-async-errors
+pg
+reflect-metadata
+typeorm
+zod
